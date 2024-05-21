@@ -1,0 +1,22 @@
+name: Update CSV
+
+on:
+  push:
+    paths:
+      - 'C:\Users\evanb\OneDrive\Desktop\Summer Project\Oneida-English Dictonary.csv'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add path/to/your/file.csv
+          git commit -m "Automated CSV update"
+          git push
