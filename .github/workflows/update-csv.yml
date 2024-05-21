@@ -3,7 +3,7 @@ name: Update CSV
 on:
   push:
     paths:
-      - 'C:\Users\evanb\OneDrive\Desktop\Summer Project\Oneida-English Dictonary.csv'
+      - 'C:\Users\evanb\OneDrive\Desktop\Summer Project\Oneida-English Dictionary.csv'
 
 jobs:
   build:
